@@ -1,0 +1,20 @@
+1 - Crie um script que ao clicar em um botão, altere a imagem da página
+
+2 - Crie uma página que tenha duas entradas de dados por caixa de texto uma para digitar valor de compra outra para
+digitar a forma de pagamento, ( cartão debito, cartão credito, dinheiro, pix).
+conforme a seleção do usuário da forma de pagamento aplique os desconto abaixo no valor da compra
+Cartão de débito 5%, Cartão de credito 8% , Dinheiro 10% , pix  2%
+
+3 - Crie um script que realiza o calculo do salário do funcionário (quanto recebe liquido)
+tendo as seguintes premissa faça o calculo do salario.
+Entrar com salário Total
+Desconto 6% Vale TRansporte
+Desconto 5% vale refeição de R$ 300,00 que e disponibilizado para o funcionário como vale
+desconto de INSS conforme tabela abaixo
+0,00 1.045,00 7,5%
+1.045,01 2.089,60 9,0%
+2.089,61 3.134,40 12,0%
+31,34,41 6.101,06 14%
+Desconto de convênio médico conforme a quantidade de dependentes
+O funcionário deve entrar com a quantidade de dependentes que possui
+cada dependente o convênio cobra R$60,00 ( o funcionário também tem desconto)
