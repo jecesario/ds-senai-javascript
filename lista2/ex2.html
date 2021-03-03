@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 1 - Javascript - Ex2</title>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <form>
+        <input id="valorCompra" type="text" placeholder="Digite o valor da compra">
+        <select id="metodoPagamento" onchange="pagar()">
+            <option value="0">Selecione</option>
+            <option value="1">Cartão Débito</option>
+            <option value="2">Cartão Crédito</option>
+            <option value="3">Dinheiro</option>
+            <option value="4">PIX</option>
+        </select>
+        <input id="resultado" type="text" value="0">
+    </form>
+</body>
+</html>
