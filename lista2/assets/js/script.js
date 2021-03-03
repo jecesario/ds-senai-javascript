@@ -9,22 +9,17 @@ function pagar() {
     let valorCompra = parseFloat(document.querySelector('#valorCompra').value);
     let metodoPagamento = document.querySelector('#metodoPagamento').value;
     let resultado = document.querySelector('#resultado');
-    switch(metodoPagamento) {
-        case '1':
-            resultado.value = valorCompra - (valorCompra * 0.05);
-            break;
-        case '2':
-            resultado.value = valorCompra + (valorCompra * 0.08);
-            break;
-        case '3':
+
+    if(metodoPagamento == '1') {
+        resultado.value = valorCompra - (valorCompra * 0.05);
+    } else if (metodoPagamento == '2') {
+        resultado.value = valorCompra + (valorCompra * 0.08);
+    } else if (metodoPagamento == '3') {
         resultado.value = valorCompra - (valorCompra * 0.10);
-        break;
-        case '4':
-            resultado.value = valorCompra - (valorCompra * 0.02);
-            break;
-        default:
-            resultado.value = 0;
-            break;
+    } else if (metodoPagamento == '4') {
+        resultado.value = valorCompra - (valorCompra * 0.02);
+    } else {
+        resultado.value = 0;
     }
 }
 
