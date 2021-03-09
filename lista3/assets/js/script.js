@@ -25,3 +25,13 @@ function rodar() {
         resultado.innerHTML = n1;
     }
 }
+
+// Script do exercício 3
+function promptFeio() {
+    let c = 0;
+    let nomes = document.querySelector('.nomes');
+    while(c < 3) {
+        nomes.innerHTML += prompt('Informe o ' + (c+1) + '° nome: ', 'Fer Ponte Preta') + '<br>';
+        c++;
+    }
+}
