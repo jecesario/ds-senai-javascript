@@ -35,3 +35,29 @@ function promptFeio() {
         c++;
     }
 }
+
+// Script do exercício 4
+//Gerando numero pra não ficar gerando um novo ao clicar no botão
+var random = Math.random() * (1 - 60) + 60;
+random = Math.floor(random);
+var c = 0;
+
+console.log(random);
+function verificar() {
+
+    var n = document.querySelector('#n').value;
+    console.log(n);
+    
+    if(n == random) {
+        alert("Acertou!");
+        n.value = 0;
+        c = 0;
+    } else {
+        alert("Tente outra vez!");
+        c++;
+    }
+
+    if(c == 3) {
+        alert("Acabaram as chances!");
+    }
+}
